@@ -6,70 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
 					}
 				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "deposit",
+				"name": "createTask",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getContractBalance",
+				"name": "taskCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getMyBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -79,18 +35,40 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "tasks",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "withdrawAll",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "toggleCompleted",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -109,7 +87,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"vote.sol": "SimpleWallet"
+			"crud.sol": "ToDoList"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -123,12 +101,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"vote.sol": {
-			"keccak256": "0x9eeb555c3f5d340f71a70907a6a21159261f733aafbfa4de688a5c0861254f2b",
+		"crud.sol": {
+			"keccak256": "0xa1b854abaee5b507cfa78293404d8882830a7a702d634e4fb32356e464347e5a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://282e0c4698bc4ea48b18fe406492754b7ee25b2fedd952a976ddeb2277509660",
-				"dweb:/ipfs/Qmbe4RnoZaT3PNTr6oZZWvbx2HKTwpZNTe5hJ3NmhpzxFZ"
+				"bzz-raw://96e4bb3270b61bc93a4cf2adced77a1df91ae5d540c08fda3669bb977c519281",
+				"dweb:/ipfs/QmW218bE7748MChaVaWpM2Nh3thxeLJ3Dd9dc2T54TN9iG"
 			]
 		}
 	},
